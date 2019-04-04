@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body {
+  /*  Full page gradient*/
+  height: 100vh;
+  background: rgb(34, 195, 186);
+  background: linear-gradient(0deg, rgba(34, 195, 186, 1) 0%, rgba(180, 253, 45, 1) 100%);
+  font-family: 'Anton', sans-serif;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #EEFF00;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 10vmin;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*Needs two values  */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+}
+
+.button {
+  /* Icons from fontawesome are actually fonts and so to change the styles we need to use font-size, , color etc */
+  font-size: 40px;
+  color: #EEFF00;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 650px) {
+  .button {
+    font-size: 30px
+  }
+}
